@@ -102,7 +102,7 @@ def run(model, dataset, dataset_test=None, batch_size=-1, learning_rate=0.01, nu
         print(report.to_markdown())
         if return_final_training_log_likelihood:
             #return trained_model, ll
-            return trained_model, ll, mean_dict
+            return trained_model, ll, mean_dict, std_dict
         else:
             #return trained_model
-            return trained_model, mean_dict
+            return trained_model, mean_dict, std_dict
